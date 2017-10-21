@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
-class RoundedInput extends React.C {
+class RoundedInput extends Component {
+  componentWillMount() {
+    // this.updateInputValue.bind(this);
+  }
+
   getInitialState() {
     return ({
       inputValue: '',
@@ -16,7 +20,7 @@ class RoundedInput extends React.C {
   render() {
     return (
       <div className="RoundedInput">
-        <input value={this.state.inputValue} onChange={this.updateInputValue}>RoundedInput</input>
+        <input value={this.state.inputValue} onChange={updateInputValue}>RoundedInput</input>
       </div>
     );
   }
