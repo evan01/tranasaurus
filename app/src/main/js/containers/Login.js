@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
-import { previewItem } from '../actions/list_actions';
+import { previewItem } from '../actions/actions';
 
 class Login extends Component {
   renderList() {

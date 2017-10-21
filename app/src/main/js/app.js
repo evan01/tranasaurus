@@ -5,7 +5,6 @@ import Login from './containers/Login';
 const App = () => (
   <div>
     <Route exact path="/" component={Login} />
-    <Route exact path="/view/:name" component={} />
   </div>
 );
 
