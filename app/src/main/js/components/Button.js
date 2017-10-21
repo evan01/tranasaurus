@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import './main.css';
 
-class Button extends React.Component {
+class Button extends Component {
   render() {
     return (
       <div className="Button">
-        <Button>Button</Button>
+        <button onClick={this.props.clickFunction}> Login</button>
       </div>
     );
   }
