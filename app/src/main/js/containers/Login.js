@@ -4,17 +4,10 @@ import { loginFail, loginSuccess } from '../actions/actions';
 
 
 class Login extends Component {
-  renderList() {
-    return (
-      <h1>SUp</h1>
-    );
-  }
   render() {
     return (
       <div className="list_items">
-        <ul>
-          { this.renderList() }
-        </ul>
+        <h1 className="title">Welcome to Tranasaurus!</h1>
       </div>
     );
   }
