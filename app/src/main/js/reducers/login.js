@@ -1,7 +1,7 @@
 import { ACTIONS } from '../consts/action_types';
-import { LISTS } from '../consts/default_state';
+import { STATE } from '../consts/default_state';
 
-export default (state = LISTS, action) => {
+export default (state = STATE, action) => {
   switch (action.type) {
     case ACTIONS.LOGIN_FAIL:
       return { ...state };

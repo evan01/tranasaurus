@@ -1,11 +1,10 @@
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
-import { previewItem } from '../actions/actions';
+import { loginFail, loginSuccess } from '../actions/actions';
+
 
 class Login extends Component {
   renderList() {
-    const a = this.props;
-    console.log(a);
     return (
       <h1>SUp</h1>
     );
@@ -27,7 +26,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   previewItem: (name) => {
-    dispatch(previewItem(name));
+    dispatch(loginSuccess(name));
+    dispatch(loginFail(name));
   },
 });
 
