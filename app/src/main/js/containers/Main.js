@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
 import { loginFail, loginSuccess } from '../actions/actions';
-import MainScreen from '../components/MainScreen';
+import MainScreen from '../components/MainScreen/MainScreen';
 
 class Main extends Component {
   render() {

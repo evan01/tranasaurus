@@ -1,0 +1,50 @@
+.MainScreen{
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: mediumseagreen;
+}
+
+.ConversationList{
+  padding-top: 20px;
+  background-color: red;
+}
+
+.convoSelector {
+  background-color: #037971;
+  max-width: 250px;
+  height: 100%;
+}
+
+.ContactField {
+  background-color: orange;
+}
+
+.ContactPicture {
+  background-color: aqua;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  min-width: 60px;
+  min-height: 60px;
+  margin-right: 8px;
+}
+
+.ContactSummary {
+  background-color: olive;
+  margin-top: 0px;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.summaryChatText {
+  font-size: 10pt;
+}

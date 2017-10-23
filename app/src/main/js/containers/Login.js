@@ -1,10 +1,9 @@
 import { connect } from 'react-redux';
-import { Router } from 'react-router-dom';
 import React, { Component } from 'react';
 import { loginFail, loginSuccess } from '../actions/actions';
 import LoginScreen from '../components/LoginScreen';
 
-class WithRouter(Login) extends Component  {
+class Login extends Component {
   login(details) {
     console.log('clicked, attempting to log in');
     console.log(details);
@@ -16,7 +15,7 @@ class WithRouter(Login) extends Component  {
 
     // for now just log in and navigate to the main screen
 
-    window.open(this.makeHref('route'));
+    this.props.history.push('/main');
   }
 
   render() {
